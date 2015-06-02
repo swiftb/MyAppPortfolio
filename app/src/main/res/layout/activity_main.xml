@@ -1,63 +1,74 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="20dp"
-    android:orientation="vertical"
     android:gravity="center"
-    android:id="@+id/appLayout">
+    android:orientation="vertical"
+    android:paddingTop="20dp">
 
-    <TextView android:text="@string/apps_header" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
         android:id="@+id/appHeader"
-        style="@style/Base.TextAppearance.AppCompat.Title" />
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apps_header" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="90dp"
-        android:paddingRight="90dp"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
         android:orientation="vertical"
-        android:gravity="center"
-        android:id="@+id/buttonsLayout">
+        android:padding="10dp">
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/spotify_streamer"
-        android:id="@+id/button_spotifyStreamer"
-        android:onClick="launchApp" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp">
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/scores_app"
-        android:id="@+id/button_scoresApp"
-        android:onClick="launchApp" />
+            <Button
+                android:id="@+id/button_spotifyStreamer"
+                style="@style/AppButton"
+                android:onClick="launchApp"
+                android:text="@string/spotify_streamer" />
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/library_app"
-        android:id="@+id/button_libraryApp"
-        android:onClick="launchApp" />
+            <Button
+                android:id="@+id/button_scoresApp"
+                style="@style/AppButton"
+                android:onClick="launchApp"
+                android:text="@string/scores_app" />
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/build_it_bigger"
-        android:id="@+id/button_buildItBigger"
-        android:onClick="launchApp" />
+            <Button
+                android:id="@+id/button_libraryApp"
+                style="@style/AppButton"
+                android:onClick="launchApp"
+                android:text="@string/library_app" />
 
-    <Button
-        style="@style/AppButton"
-        android:text="@string/xyz_reader"
-        android:id="@+id/button_xyzReader"
-        android:onClick="launchApp" />
+            <Button
+                android:id="@+id/button_buildItBigger"
+                style="@style/AppButton"
+                android:onClick="launchApp"
+                android:text="@string/build_it_bigger" />
 
-    <Button
-        style="@style/AppButton.Red"
-        android:text="@string/capstone"
-        android:id="@+id/button_capstone"
-        android:onClick="launchApp" />
+            <Button
+                android:id="@+id/button_xyzReader"
+                style="@style/AppButton"
+                android:onClick="launchApp"
+                android:text="@string/xyz_reader" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/button_capstone"
+                style="@style/AppButton.Red"
+                android:onClick="launchApp"
+                android:text="@string/capstone" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

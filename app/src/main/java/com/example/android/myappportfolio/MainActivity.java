@@ -19,27 +19,30 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /** Called when the user touches one of the app launch buttons */
+    /**
+     * Called when the user touches one of the app launch buttons.
+     * TODO: Is the switch statement needed for the actual app launching?
+     */
     public void launchApp(View v) {
 
         switch(v.getId()){
             case R.id.button_spotifyStreamer:
-                this.showToast("Launching the Spotify Streamer app!");
+                this.showToast(getString(R.string.launch_spotify_streamer));
                 break;
             case R.id.button_scoresApp:
-                this.showToast("Launching the Football Scores app!");
+                this.showToast(getString(R.string.launch_scores_app));
                 break;
             case R.id.button_libraryApp:
-                this.showToast("Launching the Library app!");
+                this.showToast(getString(R.string.launch_library_app));
                 break;
             case R.id.button_buildItBigger:
-                this.showToast("Launching the Build It Bigger app!");
+                this.showToast(getString(R.string.launch_build_it_bigger));
                 break;
             case R.id.button_xyzReader:
-                this.showToast("Launching the XYZ Reader app!");
+                this.showToast(getString(R.string.launch_xyz_reader));
                 break;
             case R.id.button_capstone:
-                this.showToast("Launching the Capstone app!");
+                this.showToast(getString(R.string.launch_capstone));
                 break;
         }
     }
