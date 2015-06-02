@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/appLayout">
+
+    <TextView android:text="@string/apps_header" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appHeader"
+        style="@style/Base.TextAppearance.AppCompat.Title" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/buttonsLayout">
+
+    <Button
+        style="@style/AppButton"
+        android:text="@string/spotify_streamer"
+        android:id="@+id/button_spotifyStreamer"
+        android:onClick="launchApp" />
+
+    <Button
+        style="@style/AppButton"
+        android:text="@string/scores_app"
+        android:id="@+id/button_scoresApp"
+        android:onClick="launchApp" />
+
+    <Button
+        style="@style/AppButton"
+        android:text="@string/library_app"
+        android:id="@+id/button_libraryApp"
+        android:onClick="launchApp" />
+
+    <Button
+        style="@style/AppButton"
+        android:text="@string/build_it_bigger"
+        android:id="@+id/button_buildItBigger"
+        android:onClick="launchApp" />
+
+    <Button
+        style="@style/AppButton"
+        android:text="@string/xyz_reader"
+        android:id="@+id/button_xyzReader"
+        android:onClick="launchApp" />
+
+    <Button
+        style="@style/AppButton.Red"
+        android:text="@string/capstone"
+        android:id="@+id/button_capstone"
+        android:onClick="launchApp" />
+
+    </LinearLayout>
+
+</LinearLayout>
